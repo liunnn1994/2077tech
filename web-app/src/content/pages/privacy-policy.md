@@ -1,5 +1,5 @@
 ---
-title: 'Privacy'
+title: '隐私政策'
 meta_title: ''
 description: 'this is meta description'
 draft: false
