@@ -1,0 +1,15 @@
+dist
+.local
+node_modules
+
+**/*.svg
+**/*.sh
+
+public
+.npmrc
+.browserslistrc
+
+*-lock.yaml
+
+components.d.ts
+auto-imports.d.ts

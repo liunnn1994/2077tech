@@ -1,0 +1,17 @@
+dist
+.local
+.output.js
+node_modules
+
+**/*.svg
+**/*.sh
+
+public
+.npmrc
+.browserslistrc
+
+*-lock.yaml
+
+components.d.ts
+CHANGELOG*.md
+auto-imports.d.ts
