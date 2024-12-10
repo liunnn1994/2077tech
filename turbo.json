@@ -4,6 +4,9 @@
     "build": {
       "outputs": ["dist/**"]
     },
+    "archive": {
+      "cache": false
+    },
     "check-types": {
       "cache": false
     },

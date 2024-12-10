@@ -1,17 +1,18 @@
 {
   "name": "07-data",
   "version": "0.0.1",
-  "description": "领起云享",
+  "description": "领起科技",
   "author": "Norris Lau",
   "type": "module",
   "scripts": {
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm",
     "format:pkg": "prettier --ignore-unknown --write package.json",
-    "upgrade:deps": "npx taze -r -w",
+    "upgrade:deps": "npx taze major -r -w",
     "upgrade:engines": "node scripts/upgradeEngines.js",
     "upgrade:all": "run-s upgrade:deps upgrade:engines format:pkg",
     "dev": "turbo generate-web-app-json dev",
+    "build": "turbo generate-web-app-json build",
     "check-types": "turbo generate-web-app-json check-types",
     "format": "prettier --ignore-unknown --write",
     "lint:fix": "turbo generate-web-app-json lint:fix",
@@ -24,8 +25,8 @@
     "commit-msg": "npx commitlint -e"
   },
   "dependencies": {
-    "axios": "^1.7.8",
-    "date-fns": "^3.6.0",
+    "axios": "^1.7.9",
+    "date-fns": "^4.1.0",
     "lodash-es": "^4.17.21",
     "turbo": "^2.3.3"
   },
@@ -39,27 +40,27 @@
     "@semantic-release/npm": "^12.0.1",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.10.1",
-    "@typescript-eslint/parser": "^8.17.0",
+    "@typescript-eslint/parser": "^8.18.0",
     "eslint": "^9.16.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-oxlint": "^0.9.10",
+    "eslint-plugin-oxlint": "^0.14.1",
     "git-cz": "^4.9.0",
     "gray-matter": "^4.0.3",
     "lint-staged": "^15.2.10",
     "npm-run-all2": "^7.0.1",
-    "oxlint": "^0.14.0",
-    "prettier": "^3.4.1",
+    "oxlint": "^0.14.1",
+    "prettier": "^3.4.2",
     "prettier-plugin-packagejson": "^2.5.6",
-    "semantic-release": "^24.1.0",
+    "semantic-release": "^24.2.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.2"
   },
-  "packageManager": "pnpm@9.14.4",
+  "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": "22.11.0"
+    "node": "22.12.0"
   },
   "volta": {
-    "node": "22.11.0",
-    "pnpm": "9.14.4"
+    "node": "22.12.0",
+    "pnpm": "9.15.0"
   }
 }

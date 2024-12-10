@@ -29,8 +29,8 @@
 
   "navigation_button": {
     "enable": true,
-    "label": "Get Started",
-    "link": "https://github.com/zeon-studio/astroplate"
+    "label": "联系我们",
+    "link": "https://work.weixin.qq.com/kfid/kfc5522053c7d50fe0e"
   },
 
   "disqus": {

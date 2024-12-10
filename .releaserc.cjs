@@ -2,7 +2,7 @@
  * @type {import('semantic-release').GlobalConfig}
  */
 const branch = process.env.CI_COMMIT_BRANCH;
-const stableBranch = 'stable';
+const stableBranch = 'main';
 const changelogFile = `./CHANGELOG${branch === stableBranch ? '' : '-' + branch}.md`;
 
 const config = {
@@ -35,23 +35,17 @@ const config = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: "echo 'prepareCmd'",
-        successCmd: "echo 'successCmd'",
+        prepareCmd: 'scripts/deploy.js --branch ${branch.name} --version ${nextRelease.version}',
       },
     ],
     [
       '@semantic-release/git',
       {
         message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
-        assets: ['package.json', changelogFile, 'public/.version'],
+        assets: ['package.json', changelogFile],
       },
     ],
-    [
-      '@semantic-release/github',
-      {
-        assets: [{ path: 'dist.zip', label: 'v${nextRelease.version}' }],
-      },
-    ],
+    ['@semantic-release/github'],
   ],
 };
 
