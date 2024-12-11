@@ -32,6 +32,9 @@ jobs:
         with:
           node-version: '22.x'
       - name: Install and build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install -g corepack zx
           corepack enable
