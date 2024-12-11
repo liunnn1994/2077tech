@@ -29,7 +29,7 @@ jobs:
       - name: Install node
         uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
+          node-version: 'lts/Jod'
       - name: Install and build
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
