@@ -16,7 +16,7 @@
     "check-types": "turbo generate-web-app-json check-types",
     "format": "prettier --ignore-unknown --write",
     "lint:fix": "turbo generate-web-app-json lint:fix",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release --debug",
     "simple-git-hooks": "simple-git-hooks",
     "cz": "git-cz"
   },
