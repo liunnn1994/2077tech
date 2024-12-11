@@ -11,7 +11,12 @@ async function main() {
 }
 
 async function deploy() {
-  console.log(new Date().toLocaleString(), `homepage v${version} is deploying...`);
+  console.log(
+    '------------------------------->',
+    new Date().toLocaleString(),
+    `${REGISTRY}/2077tech/homepage:${version} is deploying...`,
+    '<-------------------------------',
+  );
   await $`docker build --build-arg VERSION=${version} --build-arg CREATED=${rfc3339()} -f Dockerfile -t ${version} .`;
   await $`docker tag ${version} ${REGISTRY}/2077tech/homepage:${version}`;
   await $`docker tag ${version} ${REGISTRY}/2077tech/homepage:latest`;
