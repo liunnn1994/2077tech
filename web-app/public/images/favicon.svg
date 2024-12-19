@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1010 1010">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_未命名的渐变_44-2);
+      }
+
+      .cls-2 {
+        fill: url(#_未命名的渐变_48-2);
+      }
+
+      .cls-3 {
+        font-family: DOSSaemmul, DOSSaemmul;
+        font-size: 152.84px;
+        letter-spacing: .04em;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: url(#_未命名的渐变_19);
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-5 {
+        fill: url(#_未命名的渐变_44);
+      }
+
+      .cls-6 {
+        fill: url(#_未命名的渐变_48);
+      }
+    </style>
+    <linearGradient id="_未命名的渐变_19" data-name="未命名的渐变 19" x1="0" y1="505" x2="1010" y2="505" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0461fc"/>
+      <stop offset=".25" stop-color="#02c2fe"/>
+      <stop offset=".5" stop-color="#028cfe"/>
+      <stop offset=".75" stop-color="#02b6fb"/>
+      <stop offset="1" stop-color="#0555fa"/>
+    </linearGradient>
+    <linearGradient id="_未命名的渐变_48" data-name="未命名的渐变 48" x1="129.55" y1="314.08" x2="832.55" y2="314.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0461fc"/>
+      <stop offset="0" stop-color="#028cfe"/>
+      <stop offset="0" stop-color="#02b6fb"/>
+      <stop offset="1" stop-color="#0555fa"/>
+    </linearGradient>
+    <linearGradient id="_未命名的渐变_48-2" data-name="未命名的渐变 48" x1="725.55" y1="388.59" x2="880.55" y2="388.59" xlink:href="#_未命名的渐变_48"/>
+    <linearGradient id="_未命名的渐变_44" data-name="未命名的渐变 44" x1="117.05" y1="600" x2="254.05" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0461fc"/>
+      <stop offset=".25" stop-color="#02c2fe"/>
+      <stop offset=".5" stop-color="#028cfe"/>
+      <stop offset=".75" stop-color="#02b6fb"/>
+      <stop offset="1" stop-color="#0555fa"/>
+    </linearGradient>
+    <linearGradient id="_未命名的渐变_44-2" data-name="未命名的渐变 44" x1="248.05" y1="744.5" x2="893.05" y2="744.5" xlink:href="#_未命名的渐变_44"/>
+  </defs>
+  <circle class="cls-4" cx="505" cy="505" r="500"/>
+  <g>
+    <path class="cls-6" d="M780.55,202.08l-250.52,145.99-1.48-.48,40.98-74.02c.1-.32-2.34-1.48-2.48-1.48h-87.68c-24.66,13.02-49.5,25.77-74.33,38.45-44.45,22.68-88.82,47.05-134.22,67.39l-64.71.17-76.56,40.71v7.29h137l225.5-117.01,1.49,1.49-59.98,115.52h70l215.99-124-69.99,124h55l128-224h-52Z"/>
+    <polygon class="cls-2" points="803.05 351.1 725.55 426.08 880.55 426.08 803.05 351.1"/>
+  </g>
+  <g>
+    <polygon class="cls-5" points="133.2 575.14 117.05 625 177.05 625 254.05 575 133.2 575.14"/>
+    <path class="cls-1" d="M819.36,665.29l37.69-88.29h-119l-134.36,61.7,22.36-36.7,17-26-150.86.36.34.25-161.35,77.69-.19-.29h-12.9l41.95-79-51.86.14-60.14,112.86h103.78l.22.36c58.67-28.79,117.33-57.57,176-86.36h38.83l-127.83,219-53,93h28l456-228,23-56-73.69,35.29ZM564.71,702.71l227.97-100.55-54.07,101.78-246.56,118.05,72.66-119.29Z"/>
+  </g>
+  <text class="cls-3" transform="translate(175.47 557.31) scale(.98) skewX(-12)"><tspan x="0" y="0">LeadRise</tspan></text>
+</svg>
