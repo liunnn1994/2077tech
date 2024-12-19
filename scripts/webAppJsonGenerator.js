@@ -4,7 +4,6 @@ import matter from 'gray-matter';
 
 const CONTENT_DEPTH = 2;
 const JSON_FOLDER = path.resolve('./.json');
-const BLOG_FOLDER = './src/content/blog';
 
 // get data from markdown
 const getData = (folder, groupDepth) => {
@@ -53,7 +52,6 @@ try {
 
   // create json files
   const postsJsonPath = path.join(`${JSON_FOLDER}/posts.json`);
-  fs.writeFileSync(postsJsonPath, JSON.stringify(getData(BLOG_FOLDER, 2)));
 
   // merger json files for search
   const posts = fs.readFileSync(postsJsonPath, 'utf-8');
