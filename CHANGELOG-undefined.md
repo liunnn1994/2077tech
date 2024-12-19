@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/liunnn1994/2077tech/compare/v1.0.0...v1.1.0) (2024-12-14)
+
+
+### Features
+
+* 🎸 使用新 logo ([bfac02e](https://github.com/liunnn1994/2077tech/commit/bfac02ee094caaf2affd7f30085e26bd924efd8b))
+* 🎸 修改 banner 图 ([bcdef17](https://github.com/liunnn1994/2077tech/commit/bcdef17e54159d83fbccf7b76c13c61bad887607))
+* 🎸 移除 tw 调试器 ([aac7666](https://github.com/liunnn1994/2077tech/commit/aac7666089d3a4b8670beb78bdd78840856c4077))
+
 # 1.0.0 (2024-12-11)
 
 
