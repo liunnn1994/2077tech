@@ -1,9 +1,12 @@
-import { readFileSync } from 'node:fs';
-import typography from '@tailwindcss/typography';
-import forms from '@tailwindcss/forms';
-import bootstrapGrid from 'tailwind-bootstrap-grid';
+const fs = require('node:fs');
+const path = require('node:path');
+const typography = require('@tailwindcss/typography');
+const forms = require('@tailwindcss/forms');
+const bootstrapGrid = require('tailwind-bootstrap-grid');
 
-const theme = JSON.parse(readFileSync('./src/config/theme.json', 'utf-8'));
+const theme = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, './src/config/theme.json'), 'utf-8'),
+);
 
 let font_base = Number(theme.fonts.font_size.base.replace('px', ''));
 let font_scale = Number(theme.fonts.font_size.scale);
@@ -23,7 +26,7 @@ if (theme.fonts.font_family.secondary) {
 }
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: 'class',
