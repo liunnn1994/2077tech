@@ -23,7 +23,7 @@ const { pathname } = Astro.url;
 ---
 
 <header class={`header z-30 ${settings.sticky_header && 'sticky top-0'}`}>
-  <nav class="navbar container">
+  <nav class="container navbar">
     <!-- logo -->
     <div class="order-0">
       <Logo />
@@ -31,7 +31,7 @@ const { pathname } = Astro.url;
     <!-- navbar toggler -->
     <label
       for="nav-toggle"
-      class="order-3 flex cursor-pointer items-center text-dark lg:order-1 dark:text-white lg:hidden"
+      class="flex items-center order-3 cursor-pointer text-dark lg:order-1 dark:text-white lg:hidden"
       aria-label="Toggle navigation menu"
     >
       <input id="nav-toggle" type="checkbox" class="hidden" />
@@ -49,13 +49,13 @@ const { pathname } = Astro.url;
     <!-- /navbar toggler -->
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 hidden w-full pb-6 lg:order-1 lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8"
+      class="order-3 hidden w-full pb-6 navbar-nav lg:order-1 lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8"
     >
       {
         main.map((menu) => (
           <>
             {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative">
+              <li class="relative nav-item nav-dropdown group">
                 <span
                   class={`nav-link inline-flex items-center ${
                     menu.children?.map(({ url }) => url).includes(pathname) ||
@@ -65,11 +65,11 @@ const { pathname } = Astro.url;
                   }`}
                 >
                   {menu.name}
-                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </span>
-                <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                <ul class="hidden nav-dropdown-list group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
                   {menu.children?.map((child) => (
                     <li class="nav-dropdown-item">
                       <a
@@ -102,7 +102,7 @@ const { pathname } = Astro.url;
       }
       {
         navigation_button.enable && (
-          <li class="mt-4 inline-block lg:hidden">
+          <li class="inline-block mt-4 lg:hidden">
             <a class="btn btn-outline-primary btn-sm" href={navigation_button.link}>
               {navigation_button.label}
             </a>
@@ -110,23 +110,12 @@ const { pathname } = Astro.url;
         )
       }
     </ul>
-    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-      {
-        settings.search && (
-          <button
-            class="mr-5 inline-block border-r border-border pr-5 text-xl text-dark hover:text-primary dark:border-darkmode-border dark:text-white dark:hover:text-darkmode-primary"
-            aria-label="search"
-            data-search-trigger
-          >
-            <IoSearch />
-          </button>
-        )
-      }
+    <div class="flex items-center order-1 ml-auto md:order-2 lg:ml-0">
       <ThemeSwitcher className="mr-5" />
       {
         navigation_button.enable && (
           <a
-            class="btn btn-outline-primary btn-sm hidden lg:inline-block"
+            class="hidden btn btn-outline-primary btn-sm lg:inline-block"
             href={navigation_button.link}
           >
             {navigation_button.label}
