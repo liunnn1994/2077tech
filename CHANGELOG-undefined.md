@@ -1,3 +1,14 @@
+# [1.2.0](https://github.com/liunnn1994/2077tech/compare/v1.1.0...v1.2.0) (2024-12-20)
+
+
+### Features
+
+* 🎸 修改被废弃的 api ([8d771c5](https://github.com/liunnn1994/2077tech/commit/8d771c5981447d8183c2599192f206bcdb034634))
+* 🎸 修改页脚 ([4c184ce](https://github.com/liunnn1994/2077tech/commit/4c184ce6277219a9cb2de4378ea6fed40a066ecd))
+* 🎸 替换 favicon ([6453712](https://github.com/liunnn1994/2077tech/commit/6453712d30f419f8cc3d9e65d1bdf588be69a373))
+* 🎸 移除 json 的生成 ([62fa30c](https://github.com/liunnn1994/2077tech/commit/62fa30c819fff8adca7b46d0b9912cd8d6e3fa6d))
+* 🎸 移除无用的文件 ([2d189a2](https://github.com/liunnn1994/2077tech/commit/2d189a22ea25d69b5ed0d33fb2cab873234bfa78))
+
 # [1.1.0](https://github.com/liunnn1994/2077tech/compare/v1.0.0...v1.1.0) (2024-12-14)
 
 
