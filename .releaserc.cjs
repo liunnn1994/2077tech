@@ -29,7 +29,7 @@ const config = {
       '@semantic-release/git',
       {
         message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
-        assets: ['package.json', changelogFile],
+        assets: ['package.json', 'CHANGELOG.md'],
       },
     ],
     ['@semantic-release/github'],
