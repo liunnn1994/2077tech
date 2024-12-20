@@ -13,9 +13,6 @@
     "lint:fix": {
       "cache": false
     },
-    "generate-web-app-json": {
-      "cache": false
-    },
     "dev": {
       "persistent": true,
       "cache": false

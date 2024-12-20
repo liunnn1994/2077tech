@@ -8,7 +8,6 @@
     "check-types": "astro check",
     "dev": "astro dev",
     "format": "prettier -w ./src",
-    "generate-web-app-json": "node ../scripts/webAppJsonGenerator.js",
     "lint:eslint": "eslint 'src/**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}'",
     "lint:fix": "run-s lint:oxlint lint:eslint",
     "lint:oxlint": "eslint 'src/**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}' --fix",
