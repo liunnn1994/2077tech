@@ -1,29 +1,16 @@
 /**
  * @type {import('semantic-release').GlobalConfig}
  */
-const branch = process.env.CI_COMMIT_BRANCH;
-const stableBranch = 'main';
-const changelogFile = `./CHANGELOG${branch === stableBranch ? '' : '-' + branch}.md`;
 
 const config = {
-  branches: [
-    stableBranch,
-    {
-      name: 'beta',
-      prerelease: true,
-    },
-    {
-      name: 'canary',
-      prerelease: true,
-    },
-  ],
+  branches: ['main'],
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
       {
-        changelogFile,
+        changelogFile: 'CHANGELOG.md',
       },
     ],
     [
