@@ -34,14 +34,15 @@ features:
       label: 'Get Started Now'
       link: 'https://github.com/zeon-studio/astroplate'
 
-  - title: 'The Top Reasons to Choose Astro for Your Next Project'
+  - title: '价值观'
     image: '/images/service-3.png'
-    content: 'With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use.'
+    content: '无论企业规模大小，领起科技皆能精准适配工作需求，让业务开展顺畅。我们以全球视野，借科技赋能个人与组织，助其突破平凡，共赴卓越。'
     bulletpoints:
-      - 'Instantly load static sites for better user experience and SEO.'
-      - 'Intuitive syntax and support for popular frameworks make learning and using Astro a breeze.'
-      - 'Use any front-end library or framework, or build custom components, for any project size.'
-      - 'Built on cutting-edge technology to keep your projects up-to-date with the latest web standards.'
+      - '我们坚信，技术应成为逐梦美好的力量，有意义的创新定能于细微与宏大之处，塑造更光明的世界。'
+      - '我们于多元声音中蓬勃生长，借员工与客户的经验、优势及各异观点，充实、挑战并拓展思维，此乃我们的创新之道。'
+      - '我们坚信技术是造福人类的强大力量，正致力于创造可持续未来，让人人尽享技术带来的益处与机遇。'
+      - '我们相信，以人为本的 AI 设计，能拓展你的能力、解放思维，让你自由开展更具创造性与策略性的尝试，助力你与你的组织成就更多。'
+      - '基于健全的商业惯例提供安全、专属且可靠的计算体验。'
     button:
       enable: false
       label: ''
