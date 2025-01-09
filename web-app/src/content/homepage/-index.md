@@ -7,32 +7,32 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Astroplate"
+  - title: "软件开发"
     image: '/images/service-1.png'
-    content: "Astroplate is a comprehensive starter template that includes everything you need to get started with your Astro project. What's Included in Astroplate"
+    content: "专注于 Web 软件开发领域，凭借专业的技术团队和创新理念，为客户打造定制化的 Web 解决方案。我们擅长前端的交互设计，确保用户拥有流畅、美观的操作体验；后端则注重性能与安全，保障系统稳定运行。从电商平台到企业级应用，从项目策划到上线后的持续维护，我们提供一站式服务，助力各行业客户在数字化浪潮中提升竞争力，实现业务增长。"
     bulletpoints:
-      - '10+ Pre-build pages'
-      - '95+ Google Pagespeed Score'
-      - 'Build with Astro and TailwindCSS for easy and customizable styling'
-      - 'Fully responsive on all devices'
-      - 'SEO-optimized for better search engine rankings'
-      - '**Open-source and free** for personal and commercial use'
+      - '专注 Web 开发领域：长期聚焦，积累深厚经验'
+      - '定制专属解决方案：贴合业务，满足个性需求'
+      - '精通主流 Web 技术：技术全面，应对复杂项目'
+      - '打造优质用户体验：界面友好，操作便捷流畅'
+      - '提供一站式服务链：全程覆盖，高效省心省力'
+      - '多行业成功案例：经验丰富，获广泛的认可'
     button:
       enable: false
-      label: 'Get Started Now'
+      label: ''
       link: '#'
 
-  - title: 'Discover the Key Features Of Astro'
+  - title: '中小微企业 IT 服务咨询'
     image: '/images/service-2.png'
-    content: 'Astro is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:'
+    content: '专注为中小微企业量身定制 IT 服务咨询方案。凭借资深专家团队，精准洞察企业需求，从网络架构搭建、系统选型，到数据安全防护，提供一站式专业指导。深入理解中小微企业预算与发展特点，以高性价比服务，助力企业突破 IT 瓶颈，加速数字化转型，提升竞争力，在数字浪潮中稳健前行。'
     bulletpoints:
-      - 'Zero JS, by default: No JavaScript runtime overhead to slow you down.'
-      - 'Customizable: Tailwind, MDX, and 100+ other integrations to choose from.'
-      - 'UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more.'
+      - '精准需求洞察：深入了解中小微企业，精准把握其独特 IT 需求'
+      - '一站式服务：涵盖网络、系统、安全等，提供全方位 IT 咨询'
+      - '高性价比：契合中小微预算，以实惠价格交付优质服务'
     button:
       enable: true
-      label: 'Get Started Now'
-      link: 'https://github.com/zeon-studio/astroplate'
+      label: '马上咨询'
+      link: 'https://work.weixin.qq.com/kfid/kfc5522053c7d50fe0e'
 
   - title: '价值观'
     image: '/images/service-3.png'
@@ -46,5 +46,5 @@ features:
     button:
       enable: false
       label: ''
-      link: ''
+      link: '#'
 ---
