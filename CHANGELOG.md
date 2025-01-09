@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/liunnn1994/2077tech/compare/v1.4.0...v1.5.0) (2025-01-09)
+
+
+### Features
+
+* 🎸 添加业务说明 ([8d5563b](https://github.com/liunnn1994/2077tech/commit/8d5563b3d444317b2d62580807050ad32f03b553))
+
 # [1.4.0](https://github.com/liunnn1994/2077tech/compare/v1.3.0...v1.4.0) (2024-12-26)
 
 
