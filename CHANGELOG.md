@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/liunnn1994/2077tech/compare/v1.5.0...v1.5.1) (2026-02-24)
+
+
+### Bug Fixes
+
+* 🐛 修复 cve ([15f3c66](https://github.com/liunnn1994/2077tech/commit/15f3c66a1ce20b542f4f916eaa301c4c4524ad1f))
+
 # [1.5.0](https://github.com/liunnn1994/2077tech/compare/v1.4.0...v1.5.0) (2025-01-09)
 
 
