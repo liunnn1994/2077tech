@@ -1,0 +1,128 @@
+@font-face {
+  font-family: StudyMono;
+  src: url('/assets/IBMPlexMono-Regular-d3034935.woff2') format('woff2');
+  font-display: swap;
+}
+:root {
+  --bgColor: #a0a5b1;
+  font-family: StudyMono, monospace;
+  color: #fff;
+  background: #a0a5b1;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#app,
+main,
+#experience,
+#webgl {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: wait;
+}
+.study-panel,
+.outbound,
+.failure {
+  position: fixed;
+  z-index: 1000;
+  color: #dce8fa;
+  background: #101821ed;
+  border: 1px solid #5b6e80;
+  padding: 24px;
+  font:
+    13px/1.6 StudyMono,
+    monospace;
+  box-shadow: 0 12px 80px #0004;
+  backdrop-filter: blur(18px);
+}
+.study-panel {
+  right: 22px;
+  top: 22px;
+  width: min(370px, calc(100vw - 44px));
+  max-height: calc(100dvh - 44px);
+  overflow: auto;
+}
+.study-panel h1 {
+  font:
+    500 19px/1.5 StudyMono,
+    monospace;
+  margin: 10px 0;
+}
+.eyebrow {
+  letter-spacing: 0.12em;
+  font-size: 10px;
+  color: #91a9c1;
+}
+.study-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.study-panel button,
+.outbound button,
+.failure button {
+  background: #ffffff09;
+  color: inherit;
+  border: 1px solid #678095;
+  padding: 8px 12px;
+}
+.study-panel button:hover,
+.outbound button:hover {
+  background: #ffffff20;
+}
+.study-panel dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.study-panel dt {
+  color: #91a9c1;
+}
+.study-panel dd {
+  margin: 0;
+  text-align: right;
+}
+.study-panel nav {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+.study-panel a {
+  color: #dce8fa;
+  text-underline-offset: 4px;
+}
+.study-note {
+  color: #91a9c1;
+  margin-top: 22px;
+  font-size: 11px;
+}
+.outbound,
+.failure {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(520px, 90vw);
+}
+.outbound code {
+  display: block;
+  overflow-wrap: anywhere;
+  margin: 20px 0;
+  color: #a5d9fb;
+}

@@ -11,3 +11,14 @@ package-lock.json
 
 # macOS-specific files
 .DS_Store
+
+dist/
+.svelte-check/
+.env
+.env.*
+!.env.example
+
+
+# Generated browser output
+cypress/screenshots/
+cypress/videos/

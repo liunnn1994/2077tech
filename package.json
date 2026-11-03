@@ -1,6 +1,48 @@
 {
   "name": "2077tech",
   "version": "1.5.1",
-  "description": "北京数智重力科技有限公司",
+  "private": true,
+  "description": "DEMO offline rendering study",
   "author": "Norris Lau",
-  "type": "module"}
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/sync-decoders.mjs && vite --host 127.0.0.1",
+    "build": "node scripts/sync-decoders.mjs && pnpm check && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "svelte-check --tsgo --fail-on-warnings --tsconfig ./tsconfig.json && node node_modules/@typescript/native/bin/tsc --noEmit -p tsconfig.node.json && node node_modules/@typescript/native/bin/tsc --noEmit -p cypress/tsconfig.json",
+    "lint": "oxlint --deny-warnings .",
+    "lint:fix": "oxlint --fix .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "test:e2e": "node cypress/run.mjs",
+    "verify": "pnpm format:check && pnpm lint && pnpm build && pnpm test:e2e"
+  },
+  "dependencies": {
+    "eventemitter3": "5.0.4",
+    "gsap": "3.15.0",
+    "postprocessing": "6.39.6",
+    "svelte": "5.57.3",
+    "three": "0.187.0",
+    "three-mesh-bvh": "0.9.17",
+    "ua-parser-js": "2.0.10"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
+    "@tsconfig/svelte": "5.0.8",
+    "@types/node": "26.6.6",
+    "@types/three": "0.187.0",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "cypress": "16.2.1",
+    "cypress-real-events": "1.15.1",
+    "oxfmt": "0.75.0",
+    "oxlint": "1.90.0",
+    "svelte-check": "4.7.8",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=26.12.1",
+    "pnpm": ">=12.16.1"
+  },
+  "packageManager": "pnpm@12.16.1"
+}

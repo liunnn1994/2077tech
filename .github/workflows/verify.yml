@@ -1,0 +1,25 @@
+name: Verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: jdx/mise-action@v5.2.5
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec cypress verify
+      - run: pnpm verify
+      - uses: actions/upload-artifact@v7.0.2
+        if: failure()
+        with:
+          name: e2e-screenshots
+          path: cypress/screenshots/
+          if-no-files-found: ignore
